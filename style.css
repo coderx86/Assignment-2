@@ -1,0 +1,37 @@
+*{
+    font-family: "Inter", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+/* shared styles */
+.space-bet{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* nav syles */
+nav{
+    margin: 57px 190px 0px 190px;
+    align-items: center;
+}
+nav div{
+    gap: 47px;
+}
+nav h2{
+    color: #E6533C;
+    font-size: 2.25rem;
+}
+nav ul li{
+    list-style: none;
+}
+nav a{
+    text-decoration: none;
+}
+nav a:hover{
+    font-weight: 600;
+    color: white;
+    padding: 8px 20px;
+    background-color: #E6533C;
+    border: none;
+    border-radius: 48px;
+}
