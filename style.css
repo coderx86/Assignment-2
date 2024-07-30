@@ -2,6 +2,7 @@
     font-family: "Inter", sans-serif;
     padding: 0;
     margin: 0;
+    background-color: black;
 }
 /* shared styles */
 .space-bet{
@@ -11,11 +12,8 @@
 
 /* nav syles */
 nav{
-    margin: 57px 190px 0px 190px;
+    padding: 57px 190px 0px 190px;
     align-items: center;
-}
-nav div{
-    gap: 47px;
 }
 nav h2{
     color: #E6533C;
@@ -26,12 +24,19 @@ nav ul li{
 }
 nav a{
     text-decoration: none;
-}
-nav a:hover{
-    font-weight: 600;
     color: white;
-    padding: 8px 20px;
+}
+.nav-menu{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 39px;
+    display: flex;
+    padding: 12px 4px;
+    padding-right: 24px;
+    gap: 47px;
+}
+#home{
+    font-weight: bold;
     background-color: #E6533C;
-    border: none;
-    border-radius: 48px;
+    border-radius: 46px;
+    padding: 8px 20px;
 }
