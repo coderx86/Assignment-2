@@ -211,6 +211,9 @@ nav a{
 }
 
 /* reme styles */
+.reme{
+    padding: 0px 20px;
+}
 .reme-container{
     max-width: 1060px;
     background-color: rgba(34, 34, 34, 1);
@@ -247,24 +250,107 @@ nav a{
     object-fit: none;
     object-position: 66% 33%;
 }
+/* training styles */
+.training-container{
+    max-width: 1060px;
+    margin: 0 auto;
+    gap: 48px;
+}
+.training h2, .training-bmi h2{
+    font-size: 3rem;
+    font-weight: bolder;
+}
+.training-text p, .training-bmi p{
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 14px;
+}
+.training-text{
+    max-width: 671px;
+    margin-bottom: 58px;
+}
+.training-img-1{
+    display: grid;
+    grid-template-columns: 23.58% 49.05% 27.35%;
+    grid-template-rows: 201.5px;
+}
+.training-container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.training-img-2{
+    display: grid;
+    grid-template-columns: 40% 27.16% 32.73%;
+    grid-template-rows: 201.5px;
+}
+.training-img .img-1,
+.training-img .img-2,
+.training-img .img-5,
+.training-img .img-6{
+    position: relative;
+}
+.img-1-overly,
+.img-2-overly,
+.img-3-overly,
+.img-4-overly,
+.img-5-overly,
+.img-6-overly{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.img-1-overly{
+    background-color: rgba(6, 255, 210, 0.5);
+}
+.img-2-overly{
+    background-color: rgba(255, 0, 0, 0.3);
+}
+.img-3-overly{
+    background-color: rgba(0, 0, 0, 0.5);
+    max-width: 290px;
+}
+.img-4-overly{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.img-5-overly{
+    background-color: rgba(66, 255, 0, 0.3);
+}
+.img-6-overly{
+    background-color: rgba(0, 71, 255, 0.3);
+}
+.training-bmi{
+    max-width: 620px;
+    margin: 88px auto;
+}
 
 /* small size device */
 @media screen and (max-width:576px) {
-    /* navbar styles */
-    nav{
-        padding: 52px 20px 0px 20px;
-        align-items: center;
-    }
-    .nav-menu{
+    /* shared styles */
+    .nav-menu,
+    .training-img-1 .img-3,
+    .training-img-2 .img-6{
         display: none;
-    }
-    .bar-icon{
-        display: block;
     }
     .banner-container,
     .reme-container{
         flex-direction: column;
     }
+    .cyh-text h2,
+    .training-text h2,
+    .training-bmi h2
+    .reme-text h2{
+        font-size: 2rem;
+    }
+    /* nav styles */
+    nav{
+        padding: 52px 20px 0px 20px;
+        align-items: center;
+    }
+    .bar-icon{
+        display: block;
+    }
+    /* banner srtles */
     .banner-text{
         padding: 52px 20px 0px 20px;
     }
@@ -288,7 +374,6 @@ nav a{
     .banner-content{
         display: flex;
         justify-content: center;
-        align-items: center;
         padding: 0px;
         margin-top: 48px;
     }
@@ -332,12 +417,10 @@ nav a{
     .cyh-items{
         grid-template-columns: repeat(1, 1fr);
     }
-    .cyh-text h2{
-        font-size: 2rem;
-    }
     .cyh-text p{
         max-width: 316px;
     }
+    /* reme styles */
     .reme-container{
         max-width: 353px;
         margin: 0px auto 66px;
@@ -359,5 +442,33 @@ nav a{
     .reme-btn{
         display: flex;
         justify-content: center;
+    }
+    /* training styles */
+    .training p{
+        max-width: 331px;
+    }
+    .training{
+        padding: 0px 20px 32px;
+    }
+    .training-text{
+        max-width: 353px;
+        margin: 0 auto;
+    }
+    .training-img{
+        max-width: 353px;
+        max-height: 253px;
+        margin: 0 auto;
+    }
+    .training-img-1{
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 126px;
+    }
+    .training-img-2{
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 126px;
+    }
+    .training-bmi{
+        max-width: 353px;
+        margin: 30px auto 0;
     }
 }
