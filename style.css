@@ -11,12 +11,6 @@ header{
     background:linear-gradient(rgba(17, 17, 17, 1), rgba(119, 119, 119, 0.244), rgba(17, 17, 17, 1));
 }
 
-/* font */
-@font-face {
-    font-family: miama;
-    src: url(font/Miama.ttf);
-}
-
 /* shared styles */
 .space-bet{
     display: flex;
@@ -70,9 +64,12 @@ nav a{
     font-size: 4.8rem ;
     max-width: 520px;
     margin-bottom: 28px;
+    line-height: 80px;
 }
 .banner-text span{
     font-family: miama;
+    font-size: 9rem;
+    font-weight: 400;
 }
 .banner-text p{
     color: rgba(255, 255, 255, 0.5);
@@ -242,7 +239,7 @@ nav a{
     padding-left: 71.5px;
     padding-right: 71.5px;
 }
-.reme-img img{
+.reme-img{
     width: 366px;
     height: 312px;
     margin: 30px 32px 30px 0px;
@@ -449,7 +446,9 @@ option[value=""][disabled] {
     position: relative;
     max-width: 326.67px;
     max-height: 272px;
+    aspect-ratio: 326.67 / 272;
     border-radius: 18px;
+    margin: 0 auto;
 }
 .meet-our-team-collage h4{
     position: absolute;
@@ -492,6 +491,9 @@ footer{
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 39px;
+}
+.contact-info a{
+    text-decoration: none;
 }
 .footer-content li{
     font-size: 1.4375rem;
@@ -551,6 +553,10 @@ hr{
     .banner-text h1{
         font-size: 2.25rem;
         max-width: 250px;
+        line-height: 120%;
+    }
+    .banner-text span{
+        font-size: 5rem;
     }
     .banner-text p{
         font-size: 1rem;
@@ -622,14 +628,14 @@ hr{
     .reme-text{
         padding: 31px 33px 0px 33px;
         align-items: center;
-        max-width: 287px;
+        max-width: 250px;
     }
     .reme-text p{
         margin-bottom: 24px;
     }
-    .reme-img img{
-        width: 287px;
-        height: 170px;
+    .reme-img{
+        width: 81%;
+        height: auto;
         margin: 31px 33px 35px;
         object-fit: cover;
     }
@@ -681,7 +687,7 @@ hr{
     max-width: 346px;
     }
     form{
-        max-width: 354px;
+        width: 100%;
     }
     /* meet our team styles */
     .meet-our-team-container{
@@ -699,9 +705,12 @@ hr{
         max-width: 353px;
         margin: 0 auto;
     }
+    .meet-our-team-collage{
+        grid-template-columns: 1fr;
+    }
     .meet-our-team-collage div {
-        width: 312px;
-        height: 272px;
+        width: 100%;
+        height: auto;
     }
     /* footer styles */
     footer{
