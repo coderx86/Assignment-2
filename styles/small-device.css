@@ -16,7 +16,8 @@
     .training-text h2,
     .training-bmi h2,
     .reme-text h2,
-    .meet-our-team-text h2{
+    .meet-our-team-text h2,
+    .daily-challanges-text h2{
         font-size: 2rem;
     }
     .bmi-calculator-container h2{
@@ -172,6 +173,16 @@
     }
     form{
         width: 100%;
+    }
+    /* daily challanges styles */
+    .daily-challanges-content{
+        grid-template-columns: 1fr;
+    }
+    .daily-challanges-container{
+        margin: 50px 0;
+    }
+    .daily-challanges-content{
+        gap: 20px;
     }
     /* meet our team styles */
     .meet-our-team-container{
