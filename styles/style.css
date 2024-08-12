@@ -391,6 +391,9 @@ form{
     box-sizing: border-box;
     width: 100%;
 }
+.calculate-bmi-form select {
+    border-right: 20px solid transparent;
+  }
 option[value=""][disabled] {
     display: none;
   }
