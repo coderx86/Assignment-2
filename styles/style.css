@@ -450,6 +450,7 @@ option[value=""][disabled] {
 .card-text h2{
     font-size: 1.5rem;
     font-weight: bolder;
+    color: #E6533C;
     margin-bottom: 15px;
 }
 
